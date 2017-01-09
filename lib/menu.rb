@@ -9,7 +9,7 @@ class Menu
     @menu << "3. Wyszukaj ksiazke \n"
     @menu << "4. Wyszukaj autora \n"
     @menu << "0. Zakoncz program \n"
-    @menu << 'Wybierz: -> '
+    @menu << 'Wybierz numer by rozpoczac: -> '
   end
 
   def to_s

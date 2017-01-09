@@ -70,5 +70,8 @@ while key == 1
     puts 'Nastepuje zamkniecie programu'
     key = 0
     break
+  else
+    menu.clear
+    puts 'Podales zla liczbe! Sprobuj jeszcze raz!'
   end
 end

@@ -20,7 +20,7 @@ class Book
   end
 
   def to2_s
-    book = 'Tytul:    : ' << tittle.to_s << "\n"
+    book = 'Tytul: ' << tittle.to_s << "\n"
     book << 'Rok Wydania: ' << yor.to_s << "\n"
     book << 'Ilosc : ' << quantity.to_s << "\n"
     book << 'ISBN: ' << isbn.to_s << "\n"
@@ -28,6 +28,6 @@ class Book
     @authors.each do |a|
       book << a.author_name << ' ' << a.author_surname << ', '
     end
-    book << "\n"
+    book << "\n\n"
   end
 end

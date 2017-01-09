@@ -11,7 +11,7 @@ class Author
   end
 
   def to_s
-    author = 'Imie autora:    : ' << author_name.to_s << "\n"
+    author = 'Imie autora: ' << author_name.to_s << "\n"
     author << 'Nazwisko autora: ' << author_surname.to_s << "\n"
     author << 'Rok urodzenia: ' << yob.to_s << "\n"
     # Dont show yod if they are not dead
@@ -21,7 +21,7 @@ class Author
   end
 
   def books_to_s(books)
-    authors_book = 'Ksiazki          : '
+    authors_book = 'Ksiazki: '
     books.each do |b|
       b.authors.each do |a|
         authors_book << b.tittle.to_s << ', ' if a.id.eql?(id)
