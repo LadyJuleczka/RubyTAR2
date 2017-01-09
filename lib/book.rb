@@ -15,8 +15,8 @@ class Book
     @authors.push(author)
   end
 
-  def get_author
-    @author
+  def get_authors
+    @authors
   end
 
   def to2_s
@@ -28,5 +28,6 @@ class Book
     @authors.each do |a|
       book << a.author_name << ' ' << a.author_surname << ', '
     end
+    book << "\n"
   end
 end
