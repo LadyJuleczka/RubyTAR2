@@ -1,6 +1,7 @@
 require_relative 'book'
 require_relative 'author'
 require_relative 'menu'
+require_relative 'to_a'
 
 read = Read.new
 print = Print.new

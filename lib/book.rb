@@ -1,6 +1,6 @@
 # Implementation of Book class
 class Book
-  attr_accessor :tittle, :id, :yor, :quantity, :isbn
+  attr_accessor :tittle, :id, :yor, :quantity, :isbn, :authors
 
   def initialize(tittle, id, yor, quantity, isbn)
     @tittle = tittle
@@ -8,6 +8,15 @@ class Book
     @yor = yor
     @quantity = quantity
     @isbn = isbn
+    @authors = []
+  end
+
+  def add_author(author)
+    @authors.push(author)
+  end
+
+  def get_author
+    @author
   end
 
   def to_s
@@ -15,16 +24,9 @@ class Book
     book << 'Rok Wydania: ' << yor.to_s << "\n"
     book << 'Ilosc : ' << quantity.to_s << "\n"
     book << 'ISBN: ' << isbn.to_s << "\n"
-  end
-
-  def authors_to_s(authors)
-    books_authors = 'Autorzy          : '
-    authors.each do |a|
-      a.books.each do |b|
-        books_authors << a.author_name.to_s << ' '
-        books_authors << a.author_surname.to_s << ', ' if b.id.eql?(id)
-      end
+    book << 'Autorzy: '
+    @authors.each do |a|
+      book << a.author_name << ' ' << a.author_surname << ', '
     end
-    books_authors << "\n\n"
   end
 end
