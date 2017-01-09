@@ -10,7 +10,7 @@ describe Author do
     it 'initializes without errors' do
       expect { Author.new('Jan', 'Brzechwa', 1898, 1966, 2) }.not_to raise_error
     end
-    it 'initializes without errors' do
+    it 'wrong number of arguments' do
       expect { Author.new(1898, 1966, 2) }.to raise_error
     end
     context 'returns name properly' do
