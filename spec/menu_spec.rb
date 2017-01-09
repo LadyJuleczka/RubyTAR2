@@ -8,7 +8,7 @@ describe Menu do
       expect { menu.menu }.not_to raise_error
     end
     it 'initialize goes wrong' do
-      expect { menu.menu(bad, thing, happend) }.to raise_error
+      expect { menu.menu(bad, thing, happend) }.to raise_error(NameError)
     end
     context 'create new object without errors' do
       it { expect(menu).to be_an_instance_of(Menu) }

@@ -11,7 +11,7 @@ describe Author do
       expect { Author.new('Jan', 'Brzechwa', 1898, 1966, 2) }.not_to raise_error
     end
     it 'wrong number of arguments' do
-      expect { Author.new(1898, 1966, 2) }.to raise_error
+      expect { Author.new(1898, 1966, 2) }.to raise_error(ArgumentError)
     end
     context 'returns name properly' do
       it { expect(author.author_name).to eq :author_name }

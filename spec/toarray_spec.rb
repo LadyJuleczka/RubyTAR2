@@ -1,8 +1,8 @@
 require_relative 'spec_helper'
 
 describe ToArray do
-  let(:path) { '../lib/csv/authors.csv' }
-  let(:path2) { '../lib/csv/books.csv' }
+  let(:path) { 'lib/csv/authors.csv' }
+  let(:path2) { 'lib/csv/books.csv' }
   let(:reader) { ToArray.new }
   let(:author) { Author.new :author_name, :author_surname, :yob, :yod, :id }
   let(:auth_) { [] << author }

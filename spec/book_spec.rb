@@ -9,7 +9,7 @@ describe Book do
       expect { Book.new('Oblicza zmyslone', '2', 1926, 5, '83-232-32') }.not_to raise_error
     end
     it 'wrong number of arguments' do
-      expect { Book.new('Oblicza zmyslone', '2', 1926, 5, '83-232-32', 67) }.to raise_error
+      expect { Book.new('Oblicza zmyslone', '2', 1926, 5, '83-232-32', 67) }.to raise_error(ArgumentError)
     end
     context 'create new object without errors' do
       it { expect(book).to be_an_instance_of(Book) }
