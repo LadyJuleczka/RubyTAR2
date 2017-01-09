@@ -1,6 +1,6 @@
-#Implementation of menu class
-class menu
-  attr_accessor :menu,
+# Implementation of menu class
+class Menu
+  attr_accessor :menu
 
   def initialize
     @menu = "Biblioteka szkolna \n"
@@ -9,4 +9,15 @@ class menu
     @menu << "3. Wyszukaj film \n"
     @menu << "4. Wyszukaj autora \n"
     @menu << "0. Zakoncz program \n"
-    @menu << "3Wybierz: -> "
+    @menu << 'Wybierz: -> '
+  end
+
+  def to_s
+    menu
+  end
+
+  def clear
+    system 'clear'
+    system 'cls'
+  end
+end

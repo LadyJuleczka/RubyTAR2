@@ -21,7 +21,7 @@ class Author
 
   def books_to_s(books)
     authors_book = 'Ksiazki          : '
-    authors.each do |b|
+    books.each do |b|
       b.authors.each do |a|
         authors_book << b.tittle.to_s << ', ' if a.id.eql?(id)
       end
