@@ -6,7 +6,7 @@ class Menu
     @menu = "Biblioteka szkolna \n"
     @menu << "1. Wyswietl wszystkie ksiazki \n"
     @menu << "2. Wyswietl wszystkich autorow \n"
-    @menu << "3. Wyszukaj film \n"
+    @menu << "3. Wyszukaj ksiazke \n"
     @menu << "4. Wyszukaj autora \n"
     @menu << "0. Zakoncz program \n"
     @menu << 'Wybierz: -> '

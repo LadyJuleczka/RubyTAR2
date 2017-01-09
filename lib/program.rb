@@ -9,7 +9,7 @@ print = Print.new
 menu = Menu.new
 
 authors = read.authors_to_a
-books = read.books_to_a
+books = read.books_to_a(authors)
 
 key = 1
 
@@ -19,6 +19,12 @@ while key == 1
   when '1'
     menu.clear
     print.books_to_s(books)
+    # puts books.to_s
+    gets.chop
+    menu.clear
+  when '2'
+    menu.clear
+    print.authors_to_s(authors, books)
     gets.chop
     menu.clear
   when '0'

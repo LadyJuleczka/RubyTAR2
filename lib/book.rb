@@ -19,7 +19,7 @@ class Book
     @author
   end
 
-  def to_s
+  def to2_s
     book = 'Tytul:    : ' << tittle.to_s << "\n"
     book << 'Rok Wydania: ' << yor.to_s << "\n"
     book << 'Ilosc : ' << quantity.to_s << "\n"
