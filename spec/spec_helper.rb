@@ -1,7 +1,7 @@
 require 'rspec'
 require 'simplecov'
 
-Simplecov.start
+SimpleCov.start
 
 require_relative '../lib/author'
 require_relative '../lib/book'
