@@ -8,7 +8,7 @@ class ToArray
   def authors_to_a(path = '../lib/csv/authors.csv')
     array = []
     authors = CSV.read(path, col_sep: ';')
-    authors.shitf
+    authors.shift
     authors.each do |row|
       author_name, author_surname, yob, yod, id = row
       a = Author.new(author_name, author_surname, yob, yod, id)
@@ -20,7 +20,7 @@ class ToArray
   def books_to_a(auth, path = '../lib/csv/books.csv')
     array = []
     books = CSV.read(path, col_sep: ';')
-    books.shitf
+    books.shift
     books.each do |row|
       tittle, id, yor, quantity, isbn, authors = row
       authors_id = authors.split(',')
